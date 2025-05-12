@@ -84,27 +84,57 @@
             </p>
             <h3>Music Reccomondation System - Machine Learning</h3>
             <p>
-              Developed a music recommendation system leveraging Content based filtering with Natural Language Processing. 
-              Explored Tokenization, Vectorization, cosine Similarity, etc concepts and implementations.
-              By understanding and following ML Algorithms, NLP, and deep learning across vast Data Set with end-to-end ML workflows: data prep, data cleaning, analysis, modeling, etc. 
-              Additionally, utilized Streamlit framework at the end for rapid UI/UX for the model and also improved UI by utilizing Spotify API capability for sourcing the appropriate songs data and music posters.
+              Developed a music recommendation system leveraging Content based
+              filtering with Natural Language Processing. Explored Tokenization,
+              Vectorization, cosine Similarity, etc concepts and
+              implementations. By understanding and following ML Algorithms,
+              NLP, and deep learning across vast Data Set with end-to-end ML
+              workflows: data prep, data cleaning, analysis, modeling, etc.
+              Additionally, utilized Streamlit framework at the end for rapid
+              UI/UX for the model and also improved UI by utilizing Spotify API
+              capability for sourcing the appropriate songs data and music
+              posters.
               <a href=""> VIEW PROJECT</a>
             </p>
           </div>
         </div>
       </main>
       <footer>
-        <div>
-          <input type="text" id="feedback" placeholder="Feedback on UI/UX" />
-          <button onclick="showFB()">Submit</button>
+        <form id="feedbackForm" onsubmit="handleFeedback(event)">
+          <input
+            type="text"
+            name="feedback"
+            placeholder="Feedback on UI/UX"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-section">
+          <div class="contact-links">
+            <a href="mailto:jpranayakhil066@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pranay-akhil-jeedimalla/"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/akhilbrucelee066"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
         </div>
+        <script src="script.js"></script>
       </footer>
-      <script>
-        function showFB() {
-          const feedback = document.getElementById("feedback").value;
-          alert(`Thanks for your Valuble Feedback !! ${feedback}`);
-        }
-      </script>
     </div>
   </body>
 </html>

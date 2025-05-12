@@ -64,30 +64,35 @@
             technologies while maintaining a solid CGPA of 7.39/10.
           </p>
           <div class="timelines">
-              <ul>
+            <ul>
               <li>
                 <div class="timeline-date">Dec, 2024 - Apr, 2025</div>
                 <div class="timeline-content">
                   <span class="timeline-position">Machine Learning Intern</span>
                   <br /><strong>Slash Mark IT Solutions Pvt Ltd</strong><br />
                   <p>
-                      • Implemented ML projects achieving 85% model accuracy<br />
-                      • Built a music recommendation system with content-based filtering and streamlit<br />
-                      • Worked on end-to-end ML workflows and advanced ML algorithms and data analysis<br />
-                    </p>
-                    <span class="score">Remote</span>
+                    • Implemented ML projects achieving 85% model accuracy<br />
+                    • Built a music recommendation system with content-based
+                    filtering and streamlit<br />
+                    • Worked on end-to-end ML workflows and advanced ML
+                    algorithms and data analysis<br />
+                  </p>
+                  <span class="score">Remote</span>
                 </div>
               </li>
               <li>
                 <div class="timeline-date">2022 - 2025</div>
                 <div class="timeline-content">
                   <span class="timeline-position"
-                    >Bachelor of Technology in Computer Science & Engineering</span
+                    >Bachelor of Technology in Computer Science &
+                    Engineering</span
                   >
                   <br /><strong>Parul University - P.I.E.T</strong><br />
                   <p>
-                    • Developed innovative projects like Ultimate Gadget Guide<br />
-                    • Instrested in AI/ML, Dev technologies and explored through certifications and projects<br />
+                    • Developed innovative projects like Ultimate Gadget
+                    Guide<br />
+                    • Instrested in AI/ML, Dev technologies and explored through
+                    certifications and projects<br />
                     • Participated in multiple Art and tech events<br />
                   </p>
                   <span class="score">CGPA: 7.39/10</span>
@@ -101,7 +106,8 @@
                   >
                   <br /><strong>A.A.N.M & V.V.R.S.R. Polytechnic</strong><br />
                   <p>
-                    • Active member of electronics and Participated in technical workshops<br />
+                    • Active member of electronics and Participated in technical
+                    workshops<br />
                     • Completed CISCO networking certifications<br />
                     • Developed strong foundation in hardware and software<br />
                   </p>
@@ -111,11 +117,13 @@
               <li>
                 <div class="timeline-date">2018 - 2019</div>
                 <div class="timeline-content">
-                  <span class="timeline-position">10th Class - Secondary Schooling</span>
-                  <br /><strong>ST. ANN'S E.M High School</strong
-                  ><br />
+                  <span class="timeline-position"
+                    >10th Class - Secondary Schooling</span
+                  >
+                  <br /><strong>ST. ANN'S E.M High School</strong><br />
                   <p>
-                    • Won multiple District-level art competitions and Science competitions<br />
+                    • Won multiple District-level art competitions and Science
+                    competitions<br />
                     • Popular Art & Science guy in school<br />
                     • Participated in National-level Sports events<br />
                   </p>
@@ -152,17 +160,41 @@
         </div>
       </main>
       <footer>
-        <div>
-          <input type="text" id="feedback" placeholder="Feedback on UI/UX" />
-          <button onclick="showFB()">Submit</button>
+        <form id="feedbackForm" onsubmit="handleFeedback(event)">
+          <input
+            type="text"
+            name="feedback"
+            placeholder="Feedback on UI/UX"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-section">
+          <div class="contact-links">
+            <a href="mailto:jpranayakhil066@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pranay-akhil-jeedimalla/"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/akhilbrucelee066"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
         </div>
+        <script src="script.js"></script>
       </footer>
-      <script>
-        function showFB() {
-          const feedback = document.getElementById("feedback").value;
-          alert(`Thanks for your Valuble Feedback !! ${feedback}`);
-        }
-      </script>
     </div>
   </body>
 </html>

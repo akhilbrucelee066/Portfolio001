@@ -70,16 +70,18 @@
               <img src="mypic.png" alt="Pranay Akhil" class="profile-pic" />
             </div>
           </div>
-            <h2>my career</h2>
-            <p>
-              I am a Computer Science student with expertise in software
-              development and machine learning. Recently, as a Machine Learning
-              enthusiast I've started to explore AI/ML domain and developed multiple projects. I've also created innovative
-              applications like the "Ultimate Gadget Guide" using React Native,
-              Gemini AI, and Firebase, and "Let Me Cook" using Flask and AI
-              technologies. My technical journey is complemented by certifications
-              from Microsoft (AZ-900) and many reliable institution's OpenCourseWare (CS50X, CS50P).
-            </p>
+          <h2>my career</h2>
+          <p>
+            I am a Computer Science student with expertise in software
+            development and machine learning. Recently, as a Machine Learning
+            enthusiast I've started to explore AI/ML domain and developed
+            multiple projects. I've also created innovative applications like
+            the "Ultimate Gadget Guide" using React Native, Gemini AI, and
+            Firebase, and "Let Me Cook" using Flask and AI technologies. My
+            technical journey is complemented by certifications from Microsoft
+            (AZ-900) and many reliable institution's OpenCourseWare (CS50X,
+            CS50P).
+          </p>
           <h2>my skills & expertise</h2>
           <div class="skills-section">
             <div class="skill-category">
@@ -98,10 +100,13 @@
             <div class="skill-category">
               <div class="skill-category-title">Technologies & Frameworks</div>
               <div class="skills-container">
+                <span class="skill-pill">Django</span>
                 <span class="skill-pill">Flask</span>
                 <span class="skill-pill">React Native</span>
                 <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">MongoDB</span>
                 <span class="skill-pill">Git</span>
+                <span class="skill-pill">Selenium</span>
                 <span class="skill-pill">Microsoft Azure</span>
                 <span class="skill-pill">Android Studio</span>
                 <span class="skill-pill">Figma</span>
@@ -163,17 +168,41 @@
         </div>
       </main>
       <footer>
-        <div>
-          <input type="text" id="feedback" placeholder="Feedback on UI/UX" />
-          <button onclick="showFB()">Submit</button>
+        <form id="feedbackForm" onsubmit="handleFeedback(event)">
+          <input
+            type="text"
+            name="feedback"
+            placeholder="Feedback on UI/UX"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-section">
+          <div class="contact-links">
+            <a href="mailto:jpranayakhil066@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pranay-akhil-jeedimalla/"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/akhilbrucelee066"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
         </div>
+        <script src="script.js"></script>
       </footer>
-      <script>
-        function showFB() {
-          const feedback = document.getElementById("feedback").value;
-          alert(`Thanks for your Valuble Feedback !! ${feedback}`);
-        }
-      </script>
     </div>
   </body>
 </html>

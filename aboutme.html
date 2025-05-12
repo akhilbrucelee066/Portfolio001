@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="styles.css" rel="stylesheet" />
-    <title>J.P.Akhil</title>
+    <title>J.P.Akhil Portfolio</title>
   </head>
 
   <body>
@@ -126,17 +126,47 @@
         </div>
       </main>
       <footer>
-        <div>
-          <input type="text" id="feedback" placeholder="Feedback on UI/UX" />
-          <button onclick="showFB()">Submit</button>
+        <form
+          id="feedbackForm"
+          onsubmit="handleFeedback(event)"
+          action="mailto:jpranayakhil066@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <input
+            type="text"
+            name="feedback"
+            placeholder="Feedback on UI/UX"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-section">
+          <div class="contact-links">
+            <a href="mailto:jpranayakhil066@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pranay-akhil-jeedimalla/"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/akhilbrucelee066"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
         </div>
+        <script src="script.js"></script>
       </footer>
-      <script>
-        function showFB() {
-          const feedback = document.getElementById("feedback").value;
-          alert(`Thanks for your Valuble Feedback !! ${feedback}`);
-        }
-      </script>
     </div>
   </body>
 </html>
